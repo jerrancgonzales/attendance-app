@@ -5,7 +5,7 @@ public class WarningSystem {
 
         String name = "Morgado";
         int absences = 3;
-
+//dwadwad
         if (absences <= 2) {
             System.out.println(name + " - Good Standing");
         } else if (absences <= 5) {
