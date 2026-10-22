@@ -1,0 +1,107 @@
+Index: app/src/test/java/quarter2/minipeta3/MenuTestingFile.java
+===================================================================
+diff --git a/app/src/test/java/quarter2/minipeta3/MenuTestingFile.java b/app/src/test/java/quarter2/minipeta3/MenuTestingFile.java
+deleted file mode 100644
+--- a/app/src/test/java/quarter2/minipeta3/MenuTestingFile.java	(revision e7ba5be4497f4cdf272504140df5f81e926d4652)
++++ /dev/null	(revision e7ba5be4497f4cdf272504140df5f81e926d4652)
+@@ -1,30 +0,0 @@
+-package quarter2.minipeta3;
+-
+-public class MenuTestingFile {
+-    public void testCompleteFastFoodFlow() {
+-
+-        int transactionCount = 1;
+-        while (transactionCount <= 4) {
+-            System.out.println("Generating orders for Transaction #" + transactionCount);
+-
+-            StringBuffer automatedInput = new StringBuffer();
+-            if (transactionCount == 1) {
+-                automatedInput.append("1\n"); // Order a burger
+-            } else if (transactionCount ==2) {
+-                automatedInput.append("2\n");
+-                automatedInput.append("50\n"); // Total of $50
+-            } else {
+-                automatedInput.append("2\n");
+-                automatedInput.append("50\n"); // Payment
+-            }
+-            transactionCount++;
+-
+-
+-
+-
+-
+-
+-            }
+-        }
+-    }
+-
+Index: app/src/test/java/quarter2/minipeta3/WarningSystem.java
+===================================================================
+diff --git a/app/src/test/java/quarter2/minipeta3/WarningSystem.java b/app/src/test/java/quarter2/minipeta3/WarningSystem.java
+deleted file mode 100644
+--- a/app/src/test/java/quarter2/minipeta3/WarningSystem.java	(revision e7ba5be4497f4cdf272504140df5f81e926d4652)
++++ /dev/null	(revision e7ba5be4497f4cdf272504140df5f81e926d4652)
+@@ -1,17 +0,0 @@
+-package quarter2.minipeta3;
+-
+-public class WarningSystem {
+-    public static void main(String[] args) {
+-
+-        String name = "Morgado";
+-        int absences = 3;
+-//dwadwadd
+-        if (absences <= 2) {
+-            System.out.println(name + " - Good Standing");
+-        } else if (absences <= 5) {
+-            System.out.println(name + " - Warning");
+-        } else {
+-            System.out.println(name + " - At Risk");
+-        }
+-    }
+-}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision e7ba5be4497f4cdf272504140df5f81e926d4652)
++++ b/.idea/misc.xml	(date 1792633731108)
+@@ -1,5 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" project-jdk-name="jbr-25" project-jdk-type="JavaSDK" />
+   <component name="ProjectType">
+     <option name="id" value="Android" />
+   </component>
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"CHOOSE_PER_TEST\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision e7ba5be4497f4cdf272504140df5f81e926d4652)
++++ b/.idea/gradle.xml	(date 1792633709737)
+@@ -1,10 +1,17 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+         <option name="testRunner" value="CHOOSE_PER_TEST" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
+       </GradleProjectSettings>
+     </option>
+   </component>
