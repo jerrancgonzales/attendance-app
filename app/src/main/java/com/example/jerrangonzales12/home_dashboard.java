@@ -35,7 +35,7 @@ public class home_dashboard extends AppCompatActivity {
 
 
                 mainfeatures = findViewById(R.id.mainfeatures);
-                mainmenu.setOnClickListener(new View.OnClickListener() {
+                mainfeatures.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(home_dashboard.this, mainfeatures.class);
