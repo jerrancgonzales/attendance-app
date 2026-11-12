@@ -14,6 +14,7 @@ public class home_dashboard extends AppCompatActivity {
     //dd
     Button mainmenu;
 
+    Button mainfeatures;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,14 @@ public class home_dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(home_dashboard.this, Login.class);
                 startActivity(intent);
+
+
+                mainfeatures = findViewById(R.id.mainfeatures);
+                mainmenu.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(home_dashboard.this, mainfeatures.class);
+                        startActivity(intent);
             }
         });
     }
