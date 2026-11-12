@@ -45,28 +45,6 @@
 
 
 
-    65dp"
-        tools:layout_editor_absoluteY="545dp" />
-
-
-
-
-
-    73dp"
-        tools:layout_editor_absoluteY="204dp" />
-
-
-
-
-
-
-
-    "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
 
 
 
@@ -90,14 +68,16 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="293dp"
         android:layout_height="44dp"
         android:hint="password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
+        app:layout_constraintVertical_bias="0.794" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="234dp"
@@ -110,29 +90,23 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         parent
         android:layout_width="290dp"
         android:layout_height="53dp"
         android:hint="login"
+        s
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
-        app:layout_constraintVertical_bias="0.303" /><![CDATA[
+        app:layout_constraintVertical_bias="0.3"
+        app:startIconDrawble="@drawable/baseline_person"
+        tools:ignore="DuplicateIds" />
 
-    61dp"
-        tools:layout_editor_absoluteY="485dp""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
-        app:layout_constraintVertical_bias="0.287" />
-    "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+
 
 ]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
