@@ -1,7 +1,9 @@
 package com.example.jerrangonzales12;
 
+import android.content.Intent;
 import android.os.Bundle;
-
+import android.view.View;
+import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -9,7 +11,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class home_dashboard extends AppCompatActivity {
-    //d
+    //dd
+    Button mainmenu;
+
+    Button mainfeatures;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +24,23 @@ public class home_dashboard extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        mainmenu = findViewById(R.id.mainmenu);
+        mainmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home_dashboard.this, Login.class);
+                startActivity(intent);
+
+
+                mainfeatures = findViewById(R.id.mainfeatures);
+                mainfeatures.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(home_dashboard.this, mainfeatures.class);
+                        startActivity(intent);
+            }
         });
     }
 }
